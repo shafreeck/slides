@@ -1,0 +1,20 @@
+@import url(http://fonts.useso.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.useso.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.useso.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+body { font-family: 'Droid Serif'; }
+h1, h2, h3 {
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: normal;
+}
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+#shafreeck-syncid {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2147483647;
+  opacity: 0.3;
+  cursor: pointer;
+  text-decoration: none;
+}
