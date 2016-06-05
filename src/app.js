@@ -43,7 +43,8 @@ var sideView = new Vue({
        //hack it to clone a page
        e.keypress(function(event){
          if (event.key === 'c'){
-           window.location.href += "?filename=" + currentSlide.name + "&syncid="
+           window.location.href= window.location.origin + window.location.pathname
+            + "?filename=" + currentSlide.name + "&syncid="
             + currentSlide.id
          }
        })
@@ -93,9 +94,9 @@ var sync = new Vue({
   el: "#shafreeck-syncid",
   methods: {
     shareSyncID: function(){
-      var shareURL = window.location.href + "?filename=" + currentSlide.name + "&syncid="
+      var shareURL = window.location.origin + window.location.pathname
+        + "?filename=" + currentSlide.name + "&syncid="
         + currentSlide.id
-      console.log(Materialize);
       Materialize.toast(shareURL, 4000)
     },
   }
@@ -105,6 +106,10 @@ $.get("slides.json", "", function(files){
   console.log(files);
   for (i in files) {
     sideView.files.push({name: files[i].path, id: uuid.v1()})
+  }
+  //open the first slide
+  if (!currentSlide.name && files[0]){
+    sideView.openmd(sideView.files[0])
   }
 })
 

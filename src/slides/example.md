@@ -34,6 +34,9 @@ class:black,green-text,text-darken-2
 * Press `p` to enter present mode
 * Drag the normal mode slide to the screen where you want to show
 
+???
+Yeah! this is present mode, your notes comes here.
+
 ---
 class:pink-text,text-darken-2
 
