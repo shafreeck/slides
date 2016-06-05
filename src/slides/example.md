@@ -1,3 +1,5 @@
+class:blue-text,text-darken-2
+
 # Slides is a Slide Sync app for multiple person
 
 * Sync slide with remote guys
@@ -6,12 +8,16 @@
 
 ---
 
+class:yellow-text,text-darken-2
+
 # Slides Menu
 
 * Use menu to select a slide
 * All slides should be deployed and indexed to support playing by slides
 
 ---
+
+class:red-text,text-darken-2
 
 # Share and Sync
 
@@ -20,6 +26,7 @@
 * Just play, every opened from the shared url will keep in sync with your slide
 
 ---
+class:black,green-text,text-darken-2
 
 # Presents mode
 
@@ -28,6 +35,8 @@
 * Drag the normal mode slide to the screen where you want to show
 
 ---
+class:pink-text,text-darken-2
+
 # Usage
 
 * Press `h` to see the brief help
