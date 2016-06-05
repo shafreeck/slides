@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Slides</title>
+  </head>
+<body>
+  <div id="sideview" style="top:10px;left:10px; position:absolute; z-index:8888">
+    <ul class="side-nav" id="slide-out">
+      <li v-for="file in files" @click="openmd({name:file.name, id:file.id})"><a href="#">{{file.name}}</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" id="slide-out-btn" ><i class="material-icons">menu</i></a>
+  </div>
+  <div id="shafreeck-syncid" style="top:10px;left:40px; position:absolute; z-index:8887">
+    <a href="#" @click="shareSyncID">
+      <i class="material-icons">screen_share</i>
+    </a>
+  </div>
+
+  <div id="slide-show-container">
+  </div>
+</body>
+<script src="syncid.js"> </script>
+<script type="text/javascript" src="jquery.js"></script >
+<script type="text/javascript" src="materialize.js"></script>
+<script src="remark-latest.min.js"> </script>
+<script src="bundle.js"> </script>
+</html>
