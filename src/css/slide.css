@@ -9,12 +9,7 @@ h1, h2, h3 {
 }
 .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 
-#shafreeck-syncid {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 2147483647;
-  opacity: 0.3;
-  cursor: pointer;
-  text-decoration: none;
+/*fix position when toggle full screen*/
+#slide-show{
+  top: 0;
 }
