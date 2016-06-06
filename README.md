@@ -21,4 +21,4 @@ The generated files will locate at dist/, Publish it to your web servers.
 npm run-script dev
 ```
 
-Start a local web server witch based on webpack-dev-server
+Start a local web server which based on webpack-dev-server

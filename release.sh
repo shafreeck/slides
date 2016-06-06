@@ -1,6 +1,6 @@
 #!/bin/bash
 
-webpack
+node_modules/webpack/bin/webpack.js
 
 cp -rvf src/index.html dist/
 cp -rvf src/syncid.js dist/
