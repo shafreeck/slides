@@ -1,4 +1,12 @@
-class:blue-text,text-darken-2
+class: center middle pink lighten-2
+
+#An introduction to slides
+
+#### [shafreeck/slides on github](https://github.com/shafreeck/slides)
+
+---
+
+class:blue-text text-darken-2 red lighten-2
 
 # Slides is a Slide Sync app for multiple person
 
@@ -8,7 +16,7 @@ class:blue-text,text-darken-2
 
 ---
 
-class:yellow-text,text-darken-2
+class:yellow-text text-darken-2 indigo lighten-2
 
 # Slides Menu
 
@@ -17,7 +25,7 @@ class:yellow-text,text-darken-2
 
 ---
 
-class:red-text,text-darken-2
+class:red-text text-darken-2 cyan lighten-3
 
 # Share and Sync
 
@@ -26,19 +34,21 @@ class:red-text,text-darken-2
 * Just play, every opened from the shared url will keep in sync with your slide
 
 ---
-class:black,green-text,text-darken-2
+
+class:green-text text-darken-2 deep-orange lighten-2
 
 # Presents mode
 
-* Press `c` to clone a slide
-* Press `p` to enter present mode
+* Press "c" to clone a slide
+* Press "p" to enter present mode
 * Drag the normal mode slide to the screen where you want to show
 
 ???
 Yeah! this is present mode, your notes comes here.
 
 ---
-class:pink-text,text-darken-2
+
+class:pink-text text-darken-2  yellow lighten-2
 
 # Usage
 
