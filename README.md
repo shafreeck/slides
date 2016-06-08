@@ -6,7 +6,7 @@ Slides is a Slide Sync solution based on remarkjs and mqtt
 * [MQTT](http://mqtt.org/) A pub/sub message protocol, slides use the public test.mosquitto.org now
 * You can make slides use your private mqtt brokers
 
-[screencast](./slides-screencast.gif)
+[!screencast](./slides-screencast.gif)
 
 #### Demo
 * See the [demo](http://shafreeck.github.io/slides) here
