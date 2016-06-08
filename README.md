@@ -6,6 +6,12 @@ Slides is a Slide Sync solution based on remarkjs and mqtt
 * [MQTT](http://mqtt.org/) A pub/sub message protocol, slides use the public test.mosquitto.org now
 * You can make slides use your private mqtt brokers
 
+#### Demo
+* See the [demo]() here
+
+#### Editing
+* Use [slides-preview](http://shafreeck.github.io/slides-preview) in atom to make it easy to preview your markdown
+
 ## Building
 
 ```
