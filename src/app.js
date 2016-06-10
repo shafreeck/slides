@@ -1,7 +1,23 @@
+//load the resources
+require('./index.html')
+require('./slides.json')
+require('./slides/example.md')
+require('./slides/remarkjs.md')
 require('./css/slide.css')
 require('materialize-css/bin/materialize.css')
 
+var $ = window.jQuery = require('jquery')
+require('materialize-css')
+
+var Clipboard = require('clipboard')
+var sync = require('./syncid.js')
+require('./remark.js')
+
 var Vue = require('vue')
+
+var Filename = sync.Filename
+var SyncID = sync.SyncID
+
 var uuid = require('uuid')
 var mqtt = require('mqtt')
 
@@ -11,6 +27,13 @@ var clientID = uuid.v1()
 
 //init the materialize-css sideNav
 $('#slide-out-btn').sideNav()
+var clip = new Clipboard('#sharebtn')
+clip.on('success', function(e){
+  console.log('clipboard success');
+})
+clip.on('error', function(e){
+  console.log('clipboard success');
+})
 
 //connect to mqtt broker
 //var client  = mqtt.connect('ws://124.243.219.195:8081/mqtt');
@@ -88,17 +111,24 @@ var sideView = new Vue({
     }
   }
 })
-
 //share slide by url
 var sync = new Vue({
   el: "#shafreeck-syncid",
-  methods: {
-    shareSyncID: function(){
-      var shareURL = window.location.origin + window.location.pathname
-        + "?filename=" + currentSlide.name + "&syncid="
-        + currentSlide.id
-      Materialize.toast(shareURL, 4000)
-    },
+  data: {
+    shareURL: "",
+  }
+})
+
+$('#modal-trigger').leanModal({
+  ready: function(){
+    sync.shareURL = window.location.origin + window.location.pathname
+    + "?filename=" + currentSlide.name + "&syncid="
+    + currentSlide.id
+    console.log(sync.shareURL);
+  },
+  complete: function(){
+    //reset the focus on slide show
+    $('#slide-show').focus()
   }
 })
 

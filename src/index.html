@@ -2,28 +2,35 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style type="text/css">
+    .remark-slide-container {transition: opacity 0.5s ease-out;opacity: 0;}
+    .remark-visible {transition: opacity 0.5s ease-out;opacity: 1;}
+    .remark-fading { z-index: 9; }
+    </style>
   <meta charset="UTF-8">
   <title>Slides</title>
   </head>
-<body>
-  <div id="sideview" style="top:10px;left:10px; position:absolute; z-index:8888">
-    <ul class="side-nav" id="slide-out">
-      <li v-for="file in files" @click="openmd({name:file.name, id:file.id})"><a href="#">{{file.name}}</a></li>
-    </ul>
-    <a href="#" data-activates="slide-out" id="slide-out-btn" ><i class="material-icons">menu</i></a>
-  </div>
-  <div id="shafreeck-syncid" style="top:10px;left:40px; position:absolute; z-index:8887">
-    <a href="#" @click="shareSyncID">
-      <i class="material-icons">screen_share</i>
-    </a>
-  </div>
+  <body>
+    <div id="sideview" style="top:10px;left:10px; position:absolute; z-index:8888">
+      <ul class="side-nav" id="slide-out">
+        <li v-for="file in files" @click="openmd({name:file.name, id:file.id})"><a href="#">{{file.name}}</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" id="slide-out-btn" ><i class="material-icons">menu</i></a>
+    </div>
 
-  <div id="slide-show-container">
-  </div>
-</body>
-<script src="syncid.js"> </script>
-<script type="text/javascript" src="jquery.js"></script >
-<script type="text/javascript" src="materialize.js"></script>
-<script src="remark-latest.min.js"> </script>
-<script src="bundle.js"> </script>
-</html>
+    <div id="shafreeck-syncid" style="top:10px;left:40px; position:absolute; z-index:8887;width:70%">
+      <a id="modal-trigger" href="#share-modal">
+        <i class="material-icons">screen_share</i>
+      </a>
+      <div id="share-modal", class="modal green-text">
+        <div class="modal-content">
+          <p>{{shareURL}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="slide-show-container">
+    </div>
+  </body>
+  <script src="bundle.js"> </script>
+  </html>
