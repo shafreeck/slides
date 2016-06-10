@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "electron main.js",
-    "build": "node_modules/webpack/bin/webpack.js",
+    "build": "node_modules/webpack/bin/webpack.js --optimize-minimize",
     "deploy": "node_modules/gh-pages/bin/gh-pages  -d dist",
     "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base dist"
   },
