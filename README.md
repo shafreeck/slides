@@ -18,7 +18,7 @@ Slides is a Slide Sync solution based on remarkjs and mqtt
 
 ```
 npm install
-npm run-script release
+npm run build 
 ```
 
 The generated files will locate at dist/, Publish it to your web servers.
@@ -26,7 +26,7 @@ The generated files will locate at dist/, Publish it to your web servers.
 ## Development
 
 ```
-npm run-script dev
+npm run dev
 ```
 
 Start a local web server which based on webpack-dev-server
