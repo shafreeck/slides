@@ -12,7 +12,7 @@ Slides is a Slide Sync solution based on remarkjs and mqtt
 * See the [demo](http://shafreeck.github.io/slides) here
 
 #### Editing
-* Use [slides-preview](http://github.com/shafreeck/slides-preview) in atom to make it easy to preview your markdown
+* Use [slides-preview](http://github.com/shafreeck/slides-preview) in atom to make it easy to edit and preview your markdown
 
 ## Building
 
@@ -22,6 +22,11 @@ npm run build
 ```
 
 The generated files will locate at dist/, Publish it to your web servers.
+
+## Play your markdown 
+It is simple to show your markdown as slide presentations
+1. Copy the markdown file to dist/slides
+2. Edit dist/slides.json, Add the path of your markdown file
 
 ## Development
 
