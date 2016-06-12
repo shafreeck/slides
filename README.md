@@ -18,13 +18,14 @@ Slides is a Slide Sync solution based on remarkjs and mqtt
 
 ```
 npm install
-npm run build 
+npm run build
 ```
 
 The generated files will locate at dist/, Publish it to your web servers.
 
-## Play your markdown 
+## Play your markdown
 It is simple to show your markdown as slide presentations
+
 1. Copy the markdown file to dist/slides
 2. Edit dist/slides.json, Add the path of your markdown file
 
